@@ -1,5 +1,5 @@
 // This access token allows us to use Mapbox's API
-L.mapbox.accessToken = 'pk.eyJ1IjoiYWFyb25kZW5uaXMiLCJhIjoiem5LLURoYyJ9.T3tswGTI5ve8_wE-a02cMw';
+L.mapbox.accessToken = 'pk.eyJ1Ijoid2lsbGlhbWNoaXR0ZXN0ZXIiLCJhIjoiMm5yRTJBayJ9.XNgbTn1Chewc4_158cPl4w';
 
 // Set the maximum bounds so the map user doesn't pan too far from campus
 var southWest = L.latLng(40.7643, -77.9043), // south-west corner of maximum view
