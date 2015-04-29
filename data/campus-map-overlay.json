@@ -66,6 +66,21 @@
           40.79643830714415
         ]
       }
+      {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#61B329",
+        "marker-size": "medium",
+        "marker-symbol": "cross",
+        "title": "Penn State Model Railroad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.863256,
+          40.805602
+        ]
+      }
     }
   ]
 }
