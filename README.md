@@ -1,3 +1,3 @@
-# campus-map
+# CampusNightMap
 
-This is the GitHub repository for our prototype Penn State campus map website. You can visit the map at http://pennstategeog467.github.io/campus-map/.
+This is the GitHub repository for our prototype Penn State campus night map website. You can visit the map at williamchittester.github.io/PSUCampusNightMap/.
