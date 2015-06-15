@@ -59,7 +59,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
   var markers = L.mapbox.featureLayer(centroids) // Creates a new feature layer from the GeoJSON data `centroids`
     .setFilter(function() { return false; }) // Filters out all of the data so no points actually appear on the map. We'll add them when we search for specific points later on.
   .bindPopup(
-      'targetName' +
+      ''targetName'' +
       '<ul>' +
       '<li>Department of This</li>' +
       '<li>Department of That</li>' +
