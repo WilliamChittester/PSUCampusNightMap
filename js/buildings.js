@@ -61,6 +61,21 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     });
   });
   
+  // Definging function to get image for popup
+  function getImage() {
+    var targetName = document.getElementById('search').value;
+    for (var i = 0; i < data.length; i++) { // Initialize the for loop
+      if (data[i].label === targetName) { // For each point, check if the title of the point matches the target
+        var targetID = data[i]["PICTURE ID"]; // Remembers whichever building id it was that matches for use later.
+        break; // Skip the rest of the loop, we already found what we wanted.
+      } else {
+        console.log('not found'); // If we don't find it, and this should never happen, write in the console that we didn't find it.
+      }
+    }
+    return "http://www.facilities.psu.edu/FISWebSite//psufacphotos/" + targetID + ".jpg";
+  
+}
+  
   // Defining a function that automatically zooms the map to the feature with the same title as whatever's in the search field.
   function focusMap() {
     
@@ -106,6 +121,8 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
   }
 });
 });
+
+
 
 
 ///////////// DIRECTIONS /////////////////
