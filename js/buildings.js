@@ -21,7 +21,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
       '<li>Department of This</li>' +
       '<li>Department of That</li>' +
       '</ul>' +
-      '<div><img style="margin:2px;width:100%;" src="getImage()" /></div>' +
+      '<div><img style="margin:2px;width:100%;" src="images/old_main.jpg" /></div>' +
       '<button class="btn btn-info" onClick="getDirections()">Directions to here</button>'
     ) // This "bindPopUp" method adds the above HTML content to the pop-up window. We need to make that content specific to the feature's data.
     .addTo(map); // Add the new feature layer to the map.
@@ -106,24 +106,6 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
   }
 });
 });
-
-///////////// getImage /////////////////
-
-function getImage() {
-  var targetName = document.getElementById('search').value; // Gets whatever text the user has entered into the search field.
-  
-  for (var i = 0; i < data.length; i++) { // Initialize the for loop
-      if (data[i].label === targetName) { // For each point, check if the title of the point matches the target
-        var targetID = data[i]["PICTURE ID"]; // Remembers whichever building id it was that matches for use later.
-        break; // Skip the rest of the loop, we already found what we wanted.
-      } else {
-        console.log('not found'); // If we don't find it, and this should never happen, write in the console that we didn't find it.
-      }
-    }
-  }
-  return "http://www.facilities.psu.edu/FISWebSite//psufacphotos/targetID.jpg";
-}
-
 
 
 ///////////// DIRECTIONS /////////////////
