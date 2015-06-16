@@ -72,7 +72,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
         console.log('not found'); // If we don't find it, and this should never happen, write in the console that we didn't find it.
       }
     }
-    return "http://www.facilities.psu.edu/FISWebSite//psufacphotos/" + targetID + ".jpg";
+    return "http://www.facilities.psu.edu/FISWebSite//psufacphotos/0" + targetID + ".jpg";
   }
   
   // Defining a function that automatically zooms the map to the feature with the same title as whatever's in the search field.
