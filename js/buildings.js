@@ -121,7 +121,7 @@ function getImage() {
       }
     }
   }
-  return "http://www.facilities.psu.edu/FISWebSite//psufacphotos/" targetID ".jpg";
+  return "http://www.facilities.psu.edu/FISWebSite//psufacphotos/targetID.jpg";
 }
 
 
