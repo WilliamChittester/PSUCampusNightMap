@@ -21,7 +21,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
       '<li>Department of This</li>' +
       '<li>Department of That</li>' +
       '</ul>' +
-      '<div><img style="margin:2px;width:100%;"<script>
+      '<div><img style="margin:2px;width:100%;" src= <script>
 document.write(getImage());
 </script> /></div>' +
       '<button class="btn btn-info" onClick="getDirections()">Directions to here</button>'
