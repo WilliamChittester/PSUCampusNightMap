@@ -73,8 +73,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
       }
     }
     return "http://www.facilities.psu.edu/FISWebSite//psufacphotos/" + targetID + ".jpg";
-  
-}
+  }
   
   // Defining a function that automatically zooms the map to the feature with the same title as whatever's in the search field.
   function focusMap() {
