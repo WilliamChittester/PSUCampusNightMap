@@ -21,7 +21,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
       '<li>Department of This</li>' +
       '<li>Department of That</li>' +
       '</ul>' +
-      '<div><img style="margin:2px;width:100%;" src= "http://www.facilities.psu.edu/FISWebSite//psufacphotos/0991200.jpg" /></div>' +
+      '<div><img style="margin:2px;width:100%;" src= "getImage()" /></div>' +
       '<button class="btn btn-info" onClick="getDirections()">Directions to here</button>'
     ) // This "bindPopUp" method adds the above HTML content to the pop-up window. We need to make that content specific to the feature's data.
     .addTo(map); // Add the new feature layer to the map.
@@ -62,8 +62,10 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
   });
   
   // Definging function to get image for popup
-  function getImage() {
-    return "http://www.facilities.psu.edu/FISWebSite//psufacphotos/0302000.jpg";
+  function getImage(){
+    var url = "http://www.facilities.psu.edu/FISWebSite//psufacphotos/0302000.jpg";
+    console.log (url);
+    return url ;
   }
   
   // Defining a function that automatically zooms the map to the feature with the same title as whatever's in the search field.
