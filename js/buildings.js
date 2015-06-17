@@ -63,7 +63,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
   
   // Definging function to get image for popup
   function getImage(){
-    var image = document.getElementById('building')
+    var image = document.getElementById('building');
     image.src = "http://www.facilities.psu.edu/FISWebSite//psufacphotos/0991200.jpg";
     alert(image.src);
   }
