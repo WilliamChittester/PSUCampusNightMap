@@ -8,14 +8,12 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
   var markers = L.mapbox.featureLayer(centroids) // Creates a new feature layer from the GeoJSON data `centroids`
     .setFilter(function() { return false; }) // Filters out all of the data so no points actually appear on the map. We'll add them when we search for specific points later on.
     .bindPopup(
-      '<h1>Penn State Building</h1>' +
-      '<ul>' +
-      '<li>Department of This</li>' +
-      '<li>Department of That</li>' +
-      '</ul>' +
-      '<div><img style="margin:2px;width:100%;" src="images/old_main.jpg" /></div>' +
-      '<button class="btn btn-info trigger">Directions to here</button>'
-    ) // This "bindPopUp" method adds the above HTML content to the pop-up window. We need to make that content specific to the feature's data.
+      <h1>Penn State Building</h1> 
+      <ul>
+      <li>Department of This</li>
+      <li>Department of That</li> 
+      </ul>
+      <div><img style="margin:2px;width:100%;" src="images/old_main.jpg" /></div> 
     .addTo(map); // Add the new feature layer to the map.
   
   // Defines a function that takes all of the names of the buildings and adds them to an array we'll use in the autocomplete search functionality.
