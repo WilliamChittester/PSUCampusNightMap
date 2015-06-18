@@ -23,7 +23,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
       '<li>Department of This</li>' +
       '<li>Department of That</li>' +
       '</ul>' +
-      '<div><id="building" img style="margin:2px;width:100%;" src="images/old_main.jpg" onclick="getImage(this)" /></div>' +
+      '<div><img style="margin:2px;width:100%;" id="building" src="images/old_main.jpg" onclick="getImage(this)" /></div>' +
       '<!--<button class="btn btn-info" onClick="getDirections()">Directions to here</button>-->'
     ) // This "bindPopUp" method adds the above HTML content to the pop-up window. We need to make that content specific to the feature's data.
     .addTo(map); // Add the new feature layer to the map.
