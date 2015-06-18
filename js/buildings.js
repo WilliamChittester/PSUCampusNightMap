@@ -28,11 +28,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     ) // This "bindPopUp" method adds the above HTML content to the pop-up window. We need to make that content specific to the feature's data.
     .addTo(map); // Add the new feature layer to the map.
     
-  // Change Image Function
-  function changeImage(e) {
-    image = document.getElementById("building");
-    image.src = "http://www.facilities.psu.edu/FISWebSite//psufacphotos/0005000.jpg";
-  }
+
   
   $.widget( "custom.catcomplete", $.ui.autocomplete, {
     _create: function() {
