@@ -8,13 +8,21 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
   var markers = L.mapbox.featureLayer(centroids) // Creates a new feature layer from the GeoJSON data `centroids`
     .setFilter(function() { return false; }) // Filters out all of the data so no points actually appear on the map. We'll add them when we search for specific points later on.
     .bindPopup(
-      '<h1>Penn State Building</h1>'+ 
-      '<ul>'+
-      '<li>Department of This</li>'+
-      '<li>Department of That</li>' +
-      '</ul>'+
-      '<div><img style="margin:2px;width:100%;" src="images/old_main.jpg" /></div>' 
+      <h1>Penn State Building</h1> 
+      <ul>
+      <li>Department of This</li>
+      <li>Department of That</li>
+      </ul>
+      <div>
+      <img style="margin:2px;width:100%;" src="http://www.facilities.psu.edu/FISWebSite//psufacphotos/0023001.jpg" id="building" onclick="changeImage(this)" />
+      </div> 
     .addTo(map); // Add the new feature layer to the map.
+    
+  // Change Image Function
+  function changeImage(e) {
+    image = document.getElementById("building");
+    image.src = "http://www.facilities.psu.edu/FISWebSite//psufacphotos/0005000.jpg";
+  }
   
   // Defines a function that takes all of the names of the buildings and adds them to an array we'll use in the autocomplete search functionality.
   function getTags(data) {
