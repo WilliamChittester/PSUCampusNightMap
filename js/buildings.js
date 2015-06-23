@@ -106,6 +106,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     });
     
   }
+  document.getElementById("name").innerHTML = BuildName
 });
 });
 
