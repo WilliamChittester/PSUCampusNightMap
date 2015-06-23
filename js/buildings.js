@@ -74,7 +74,8 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     for (var i = 0; i < data.length; i++) { // Initialize the for loop
       if (data[i].label === targetName) { // For each point, check if the title of the point matches the target
         var targetID = data[i]["PICTURE ID"]; // Remembers whichever building id it was that matches for use later.
-        var BuildName =data[i]["label"];
+        var Name =data[i]["label"];
+        var buildName= Name;
         break; // Skip the rest of the loop, we already found what we wanted.
       } else {
         console.log('not found'); // If we don't find it, and this should never happen, write in the console that we didn't find it.
@@ -103,8 +104,8 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     markers.setFilter(function(feature) { 
       return feature.properties.building_id == targetID; // Filter the feature with a title property that exactly matches our target.
     });
-  window.alert(BuildName);
-  document.getElementById("name").innerHTML = BuildName;
+  window.alert(Name);
+  document.getElementById("name").innerHTML = Name;
     
   }
 
