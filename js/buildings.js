@@ -103,10 +103,11 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     markers.setFilter(function(feature) { 
       return feature.properties.building_id == targetID; // Filter the feature with a title property that exactly matches our target.
     });
-    
-  }
   window.alert(BuildName);
   document.getElementById("name").innerHTML = BuildName;
+    
+  }
+
 });
 });
 
