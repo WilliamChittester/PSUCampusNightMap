@@ -22,11 +22,12 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
       '<li>Department of That</li>'+
       '</ul>'+
       '<div><img style="margin:2px;width:100%;"  src="images/old_main.jpg" /></div>'
+      var buildName= "Walker Building";
+      document.getElementById("name").innerHTML = buildName;
     ) // This "bindPopUp" method adds the above HTML content to the pop-up window. We need to make that content specific to the feature's data.
     .addTo(map); // Add the new feature layer to the map.
   
-  var buildName= "Walker Building";
-  document.getElementById("name").innerHTML = buildName;
+  
   
   $.widget( "custom.catcomplete", $.ui.autocomplete, {
     _create: function() {
