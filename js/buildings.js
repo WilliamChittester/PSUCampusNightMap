@@ -76,7 +76,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
         var targetID = data[i]["PICTURE ID"]; // Remembers whichever building id it was that matches for use later.
         var BuildName = data[i]["label"];
         window.alert(BuildName);
-        document.getElementById("Name").innerHTML = "BuildName";
+        
         break; // Skip the rest of the loop, we already found what we wanted.
       } else {
         console.log('not found'); // If we don't find it, and this should never happen, write in the console that we didn't find it.
