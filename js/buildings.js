@@ -16,12 +16,12 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
   var markers = L.mapbox.featureLayer(centroids) // Creates a new feature layer from the GeoJSON data `centroids`
     .setFilter(function() { return false; }) // Filters out all of the data so no points actually appear on the map. We'll add them when we search for specific points later on.
   .bindPopup(
-      '<h1>Penn State Building</h1>' +
+      '<h1 id="Name">Penn State Building</h1>' +
       '<ul>' +
       '<li>Department of This</li>' +
       '<li>Department of That</li>' +
       '</ul>' +
-      '<div><img style="margin:2px;width:100%;" src="images/old_main.jpg" /></div>' +
+      '<div><img style="margin:2px;width:100%;"  src="images/old_main.jpg" /></div>' +
       '<!--<button class="btn btn-info" onClick="getDirections()">Directions to here</button>-->'
     ) // This "bindPopUp" method adds the above HTML content to the pop-up window. We need to make that content specific to the feature's data.
     .addTo(map); // Add the new feature layer to the map.
@@ -74,7 +74,9 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     for (var i = 0; i < data.length; i++) { // Initialize the for loop
       if (data[i].label === targetName) { // For each point, check if the title of the point matches the target
         var targetID = data[i]["PICTURE ID"]; // Remembers whichever building id it was that matches for use later.
-        window.alert(targetID);
+        var element = document.getElementById("Name");
+        element.innerHTML = "data[i].label";
+        window.alert(data[i].label);
         break; // Skip the rest of the loop, we already found what we wanted.
       } else {
         console.log('not found'); // If we don't find it, and this should never happen, write in the console that we didn't find it.
