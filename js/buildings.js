@@ -74,8 +74,6 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     for (var i = 0; i < data.length; i++) { // Initialize the for loop
       if (data[i].label === targetName) { // For each point, check if the title of the point matches the target
         var targetID = data[i]["PICTURE ID"]; // Remembers whichever building id it was that matches for use later.
-        var element = document.getElementById("Name");
-        element.innerHTML = "data[i].label";
         window.alert("data[i].label");
         break; // Skip the rest of the loop, we already found what we wanted.
       } else {
