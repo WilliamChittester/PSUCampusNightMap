@@ -58,6 +58,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     
     for (var i = 0; i < data.length; i++) { // Initialize the for loop
       if (data[i].label === targetName) { // For each point, check if the title of the point matches the target
+      var targetID = data[i]["PICTURE ID"]; // Remembers whichever building id it was that matches for use later.
         var buildName = data[i].label;
         break; // Skip the rest of the loop, we already found what we wanted.
       } else {
@@ -67,7 +68,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     for (var i = 0; i < centroids.features.length; i++) { // Initialize the for loop
       if (centroids.features[i].properties.building_id == targetID) { // For each point, check if the title of the point matches the target
         var targetPointIndex = i; // Remembers whichever building id it was that matches for use later.
-        var targetID = centroids.features[i].properties["building_id"];
+        var buildingID = centroids.features[i].properties["building_id"];
         break; // Skip the rest of the loop, we already found what we wanted.
       } else {
         console.log('not found'); // If we don't find it, and this should never happen, write in the console that we didn't find it.
@@ -79,7 +80,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
       '<li>Department of This</li>' +
       '<li>Department of That</li>' +
       '</ul>' +
-      '<div><img style="margin:2px;width:100%;" src="http://www.facilities.psu.edu/FISWebSite//psufacphotos/'+targetID+'.jpg" /></div>' +
+      '<div><img style="margin:2px;width:100%;" src="http://www.facilities.psu.edu/FISWebSite//psufacphotos/'+buildingID+'.jpg" /></div>' +
       '<button class="btn btn-info trigger">Directions to here</button>';
      // Adding all the building centroids as a points layer
   var markers = L.mapbox.featureLayer(centroids) // Creates a new feature layer from the GeoJSON data `centroids`
