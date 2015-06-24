@@ -103,7 +103,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     // Filter all the features in the markers feature layer so that only the feature with the same title as our target is showing
     markers.setFilter(function(feature) { 
       return feature.properties.building_id == targetID; // Filter the feature with a title property that exactly matches our target.
-      .addTo(map);
+      addTo(map);
       
     });
     
