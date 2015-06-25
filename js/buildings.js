@@ -76,24 +76,25 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     }
     
   var popupContent= 
-      '<ul class="nav nav-tabs">'+
-      '<li class="active"><a data-toggle="tab" href="#home">Home</a></li>'+
-      '<li><a data-toggle="tab" href="#menu1">Info</a></li>'+
-      '</ul>'+
+     '<ul class="nav nav-tabs">'+
+  '<li class="active"><a data-toggle="tab" href="#home">Home</a></li>'+
+  '<li><a data-toggle="tab" href="#menu1">Info</a></li>'+
+'</ul>'+
 
-  '<div class="tab-content">'+
+'<div class="tab-content">'+
   '<div id="home" class="tab-pane fade in active">'+
-      '<h1>'+buildName+'</h1>' +
+    '<h1>'+buildName+'</h1>' +
       '<ul>' +
       '<li>Department of This</li>' +
       '<li>Department of That</li>' +
       '</ul>' +
       '<div><img style="margin:2px;width:100%;" src="http://www.facilities.psu.edu/FISWebSite//psufacphotos/'+buildingID+'.jpg" /></div>' +
       '<button class="btn btn-info trigger">Directions to here</button>'+
+  '</div>'+
   '<div id="menu1" class="tab-pane fade">'+
-      '<h3>Computer Lab</h3>'+
-      '<p>NO</p>'+
-      '</div>'
+    '<h3>Computer Lab</h3>'+
+    '<p>NO</p>'+
+  '</div>'
  ;
      // Adding all the building centroids as a points layer
   var markers = L.mapbox.featureLayer(centroids) // Creates a new feature layer from the GeoJSON data `centroids`
