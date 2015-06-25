@@ -43,3 +43,12 @@
 .leaflet-control-locate.active a {
     background-position:-33px -2px;
 }
+
+/* categorical auto complete */
+  .ui-autocomplete-category {
+    font-weight: bold;
+    color: rgb(0,48,135);
+    padding: .2em .4em;
+    margin: .1em 0 .2em;
+    line-height: 1.5;
+  }
