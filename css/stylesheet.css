@@ -20,12 +20,15 @@
     width:100%;
     z-index:-1;
 }
+
+
 /* Set dimensions and scrolling of autocomplete menue */
- .ui-autocomplete {
-    max-height: 100px;
-    overflow-y: auto;
-    overflow-x: hidden;
+.ui-autocomplete {
+  max-height: 12em;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+
 * html .ui-autocomplete {
     max-height: 25%;
 }
