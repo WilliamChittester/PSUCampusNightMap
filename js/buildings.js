@@ -78,7 +78,15 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
   var popupContent= 
      '<ul class="nav nav-tabs">'+
   '<li class="active"><a data-toggle="tab" href="#home">Home</a></li>'+
-  '<li><a data-toggle="tab" href="#menu1">Info</a></li>'+
+  '<li class="dropdown">'+
+    '<a class="dropdown-toggle" data-toggle="dropdown" href="#">Info'+
+    '<span class="caret"></span></a>'+
+    '<ul class="dropdown-menu">'+
+      '<li><a href="#Sub1">Departments</a></li>'+
+      '<li><a href="#Sub2">Hours</a></li>'+
+      '<li><a href="#Sub2">Computer Lab</a></li>'+ 
+    '</ul>'+
+  '</li>'+
 '</ul>'+
 
 '<div class="tab-content">'+
