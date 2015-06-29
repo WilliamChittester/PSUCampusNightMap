@@ -95,7 +95,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
       '<div><img style="margin:2px;width:100%;" src="http://www.facilities.psu.edu/FISWebSite//psufacphotos/'+buildingID+'.jpg" /></div>' +
       '<button class="btn btn-info trigger">Directions to here</button>'+
   '</div>'+
-  '<div id="Sub1" class="tab-pane fade">'+
+  '<div id="Sub1" class="dropdown">'+
     '<h3>Department</h3>'+
     '<ul>' +
       '<li>Department of This</li>' +
