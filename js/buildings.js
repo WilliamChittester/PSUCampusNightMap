@@ -109,6 +109,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
   '<div id="Sub3" class="tab-pane fade">'+
     '<h3>Computer Labs</h3>'+
     '<p>No General Use Labs</p>'+
+  '</div>'+
   '</div>'
  ;
      // Adding all the building centroids as a points layer
