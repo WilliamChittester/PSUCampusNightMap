@@ -84,24 +84,31 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     '<ul class="dropdown-menu">'+
       '<li><a href="#Sub1">Departments</a></li>'+
       '<li><a href="#Sub2">Hours</a></li>'+
-      '<li><a href="#Sub2">Computer Lab</a></li>'+ 
+      '<li><a href="#Sub3">Computer Labs</a></li>'+ 
     '</ul>'+
   '</li>'+
 '</ul>'+
 
 '<div class="tab-content">'+
   '<div id="home" class="tab-pane fade in active">'+
-    '<h1>'+buildName+'</h1>' +
-      '<ul>' +
-      '<li>Department of This</li>' +
-      '<li>Department of That</li>' +
-      '</ul>' +
+    '<h1><b>'+buildName+'</b></h1>' +
       '<div><img style="margin:2px;width:100%;" src="http://www.facilities.psu.edu/FISWebSite//psufacphotos/'+buildingID+'.jpg" /></div>' +
       '<button class="btn btn-info trigger">Directions to here</button>'+
   '</div>'+
-  '<div id="menu1" class="tab-pane fade">'+
-    '<h3>Computer Lab</h3>'+
-    '<p>NO</p>'+
+  '<div id="Sub1" class="tab-pane fade">'+
+    '<h3>Department</h3>'+
+    '<ul>' +
+      '<li>Department of This</li>' +
+      '<li>Department of That</li>' +
+      '</ul>' +
+  '</div>'+
+  '<div id="Sub2" class="tab-pane fade">'+
+    '<h3>Hours</h3>'+
+    '<p>6:00AM-11:00PM</p>'+
+  '</div>'+
+  '<div id="Sub3" class="tab-pane fade">'+
+    '<h3>Computer Labs</h3>'+
+    '<p>No General Use Labs</p>'+
   '</div>'
  ;
      // Adding all the building centroids as a points layer
