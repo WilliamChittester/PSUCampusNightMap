@@ -79,12 +79,12 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
      '<ul class="nav nav-tabs">'+
   '<li class="active"><a data-toggle="tab" href="#home">Home</a></li>'+
   '<li class="dropdown">'+
-    '<a class="dropdown-toggle" data-toggle="dropdown" href="#">Info'+
+    '<a class="dropdown-toggle" data-toggle="dropdown" href="#Info">Info'+
     '<span class="caret"></span></a>'+
     '<ul class="dropdown-menu">'+
-      '<li><a href="#">Departments</a></li>'+
-      '<li><a href="#">Hours</a></li>'+
-      '<li><a href="#">Computer Labs</a></li>'+ 
+      '<li><a href="#Sub1">Departments</a></li>'+
+      '<li><a href="#Sub2">Hours</a></li>'+
+      '<li><a href="#Sub3">Computer Labs</a></li>'+ 
     '</ul>'+
   '</li>'+
 '</ul>'+
@@ -95,7 +95,9 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
       '<div><img style="margin:2px;width:100%;" src="http://www.facilities.psu.edu/FISWebSite//psufacphotos/'+buildingID+'.jpg" /></div>' +
       '<button class="btn btn-info trigger">Directions to here</button>'+
   '</div>'+
-  '<div id="Sub1" class="dropdown">'+
+  '</div>'+
+  '<div class="dropdown-content">'+
+  '<div id="Sub1" class="dropdown-pane fade in active">'+
     '<h3>Department</h3>'+
     '<ul>' +
       '<li>Department of This</li>' +
