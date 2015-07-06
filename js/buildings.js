@@ -95,20 +95,18 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
       '<div><img style="margin:2px;width:100%;" src="http://www.facilities.psu.edu/FISWebSite//psufacphotos/'+buildingID+'.jpg" /></div>' +
       '<button class="btn btn-info trigger">Directions to here</button>'+
   '</div>'+
-  '</div>'+
-  '<div class="dropdown-content">'+
-  '<div id="Sub1" class="dropdown-pane fade in active">'+
+  '<div id="Sub1" class="tab-pane fade in active">'+
     '<h3>Department</h3>'+
     '<ul>' +
       '<li>Department of This</li>' +
       '<li>Department of That</li>' +
       '</ul>' +
   '</div>'+
-  '<div id="Sub2" class="tab-pane fade">'+
+  '<div id="Sub2" class="tab-pane fade in active">'+
     '<h3>Hours</h3>'+
     '<p>6:00AM-11:00PM</p>'+
   '</div>'+
-  '<div id="Sub3" class="tab-pane fade">'+
+  '<div id="Sub3" class="tab-pane fade in active">'+
     '<h3>Computer Labs</h3>'+
     '<p>No General Use Labs</p>'+
   '</div>'+
