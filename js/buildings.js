@@ -82,9 +82,9 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
     '<a class="dropdown-toggle" data-toggle="dropdown" href="#">Info'+
     '<span class="caret"></span></a>'+
     '<ul class="dropdown-menu">'+
-      '<li><a href="#Sub1">Departments</a></li>'+
-      '<li><a href="#Sub2">Hours</a></li>'+
-      '<li><a href="#Sub3">Computer Labs</a></li>'+ 
+      '<li><a href="#">Departments</a></li>'+
+      '<li><a href="#">Hours</a></li>'+
+      '<li><a href="#">Computer Labs</a></li>'+ 
     '</ul>'+
   '</li>'+
 '</ul>'+
@@ -93,6 +93,7 @@ $.getJSON("https://rawgit.com/pennstategeog467/campus-map/gh-pages/data/building
   '<div id="home" class="tab-pane fade in active">'+
     '<h1><b>'+buildName+'</b></h1>' +
       '<div><img style="margin:2px;width:100%;" src="http://www.facilities.psu.edu/FISWebSite//psufacphotos/'+buildingID+'.jpg" /></div>' +
+      '<button class="btn btn-info trigger">Directions to here</button>'+
   '</div>'+
   '<div id="Sub1" class="dropdown">'+
     '<h3>Department</h3>'+
