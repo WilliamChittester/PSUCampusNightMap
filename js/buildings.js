@@ -81,7 +81,7 @@ var popupContent=
     
     '<li class="dropdown">'+
       '<a class="dropdown-toggle" data-toggle="dropdown" href="#">Info
-        '<span class="caret"></span></a>'+
+        '<b class="caret"></b></a>'+
       '<ul class="dropdown-menu">'+
          '<li><a data-toggle="tab" href="#Dept">Departments</a></li>'+
          '<li><a data-toggle="tab" href="#Hours">Hours</a></li>'+
@@ -112,7 +112,7 @@ var popupContent=
     '</div>'+
     
     '<div id="Comp" class="tab-pane">'+
-     '<h3>Computer Labs</h3>'+
+      '<h3>Computer Labs</h3>'+
       '<p>No General Use Labs</p>'+
     '</div>'+
     
