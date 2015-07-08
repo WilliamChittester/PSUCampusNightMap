@@ -93,7 +93,7 @@
    '<div id="home" class="tab-pane fade in active">'+
      '<h1><b>'+buildName+'</b></h1>' +
        '<div><img style="margin:2px;width:100%;" src="http://www.facilities.psu.edu/FISWebSite//psufacphotos/'+buildingID+'.jpg" /></div>' +
--      '<button class="btn btn-info trigger">Directions to here</button>'+
+       '<button class="btn btn-info trigger">Directions to here</button>'+
    '</div>'+
    '<div id="Dept" class="tab-pane fade">'+
      '<h3>Department</h3>'+
