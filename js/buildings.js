@@ -82,9 +82,9 @@
      '<a class="dropdown-toggle" data-toggle="dropdown" href="#">Info'+
      '<span class="caret"></span></a>'+
      '<ul class="dropdown-menu">'+
-       '<li><a href="#Sub1">Departments</a></li>'+
-       '<li><a href="#Sub2">Hours</a></li>'+
-       '<li><a href="#Sub3">Computer Labs</a></li>'+ 
+       '<li><a data-toggle="tab" href="#Dept">Departments</a></li>'+
+       '<li><a data-toggle="tab" href="#Hours">Hours</a></li>'+
+       '<li><a data-toggle="tab" href="#Comp">Computer Labs</a></li>'+ 
      '</ul>'+
    '</li>'+
  '</ul>'+
@@ -95,18 +95,18 @@
        '<div><img style="margin:2px;width:100%;" src="http://www.facilities.psu.edu/FISWebSite//psufacphotos/'+buildingID+'.jpg" /></div>' +
 -      '<button class="btn btn-info trigger">Directions to here</button>'+
    '</div>'+
-   '<div id="Sub1" class="dropdown">'+
+   '<div id="Dept" class="tab-pane fade">'+
      '<h3>Department</h3>'+
      '<ul>' +
        '<li>Department of This</li>' +
        '<li>Department of That</li>' +
        '</ul>' +
    '</div>'+
-   '<div id="Sub2" class="tab-pane fade">'+
+   '<div id="Hours" class="tab-pane fade">'+
      '<h3>Hours</h3>'+
      '<p>6:00AM-11:00PM</p>'+
    '</div>'+
-   '<div id="Sub3" class="tab-pane fade">'+
+   '<div id="Comp" class="tab-pane fade">'+
      '<h3>Computer Labs</h3>'+
      '<p>No General Use Labs</p>'+
    '</div>'+
